@@ -1,0 +1,146 @@
+/* Using a comic font called Adventure Font */
+@font-face{
+    font-family: adventure;
+    src: url(../AdventureFontFiles/Adventure.otf);
+}
+@font-face {
+    font-family: adventure-hollow;
+    src: url(../AdventureFontFiles/AdventureHollow.otf);
+}
+@font-face {
+   font-family: comic-book;
+   src: url(../ComicBookFontFiles/ComicBook.otf);
+}
+@font-face {
+    font-family: marvel-font;
+    src: url(../marvel-font-betterstudio.com_/marvel-font-betterstudio.com/marvel2.otf);
+ }
+
+/* Creation of global variable for fonts and colors */
+:root{
+    --adventure: adventure;
+    --adventure-hollow: adventure-hollow;
+    --comic-book: comic-book;
+    --marvel-red: #F0131E;
+    --marvel-font: marvel-font;
+}
+/* Selection of all the HTML elements on the page */
+*{
+    padding: 0;
+    margin:  0;
+    box-sizing: border-box;  
+}
+body{
+    background-color: #262525;
+
+}
+
+.header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: var(--adventure);
+    background-color:var(--marvel-red);
+    padding: 1rem 0.5rem;
+    width:100vw;
+    box-shadow: 0 4px 8px 0 rgba(245, 242, 242, 0.2), 0 6px 20px 0 rgba(248, 246, 246, 0.19);
+
+}
+.header .logo {
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+    font-family: var(--marvel-font);
+    
+}
+.header .logo span{
+    background-color: black;
+    padding: 0 1rem;
+}
+.header .logo p{
+    display:inline-block;
+    margin: 0 .3rem;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.navbar a{
+    margin: 0 0.5rem;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    
+}
+.navbar a:hover{
+    color:white;
+}
+.main-body{
+    width:100vw;
+    height:100vh;
+}
+.main-body .info-1{
+    display:flex;
+    position: relative;
+}
+.main-body .info{
+    height: 200px;
+    background-color: #f2f2f2;
+    transform: skew(-20deg);
+    border:1px solid black;
+    border-radius: 5px;
+    font-family: var(--comic-book);
+    padding: 4rem;
+    text-align: center;
+}
+.main-body .info-1 .text-info{
+    width: 600px; 
+    margin: 4rem 0 0 4rem;
+    
+}
+ .btn{
+    background-color: white;
+    font-family: var(--comic-book);
+    padding:0.5rem;
+    border-radius: 5px;
+}
+ .btn:hover{
+    background-color: var(--marvel-red);
+    color: white;
+}
+.main-body .info-1 .img-info{
+    width:100px;
+    margin: 6rem 0rem; 
+    overflow: hidden;
+}
+.main-body .info-1 .img-info svg{
+     position:absolute;
+     top: -15px;
+     right: -160px;
+     
+}
+.main-body .info-2{
+    display: flex; 
+    position: relative;
+    left:40vw;
+}
+.main-body .info-2 .text-info{
+    width: 600px;
+    margin: 0rem 4rem 0 0;
+}
+.main-body .info-2 .img-info{
+   width:100px;
+   margin: 2rem 1.5rem 0 0;
+   overflow: hidden;
+}
+.main-body .info-2 .img-info svg{
+    position:absolute;
+    top: -80px;
+    right: -50px;
+}
+.footer{
+    width: 100vw;
+    height: 50vh;
+    margin: 2rem 0 0 0 ;
+    background-color: var(--marvel-red);
+    box-shadow: 0 4px 8px 0 rgba(245, 242, 242, 0.2), 0 6px 20px 0 rgba(248, 246, 246, 0.19);
+}

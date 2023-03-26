@@ -1,0 +1,79 @@
+/* Using a comic font called Adventure Font */
+@font-face{
+    font-family: adventure;
+    src: url(../AdventureFontFiles/Adventure.otf);
+}
+/* Using a comic font called adventure-hollow */
+@font-face {
+    font-family: adventure-hollow;
+    src: url(../AdventureFontFiles/AdventureHollow.otf);
+}
+/* Using a font called comic-book */
+@font-face {
+   font-family: comic-book;
+   src: url(../ComicBookFontFiles/ComicBook.otf);
+}
+/* Using a font called marvel-font */
+@font-face {
+    font-family: marvel-font;
+    src: url(../marvel-font-betterstudio.com_/marvel-font-betterstudio.com/marvel2.otf);
+ }
+
+/* Creation of global variable for fonts and colors */
+:root{
+    --adventure: adventure;
+    --adventure-hollow: adventure-hollow;
+    --comic-book: comic-book;
+    --marvel-red: #F0131E;
+    --marvel-font: marvel-font;
+}
+/* Selection of all the HTML elements on the page */
+*{
+    padding: 0;
+    margin:  0;
+    box-sizing: border-box;  
+}
+body{
+    background-color:#f2f2f2;
+
+}
+
+.header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: var(--adventure);
+    background-color:var(--marvel-red);
+    padding: 1rem 0.5rem;
+    width:100vw;
+    box-shadow: 0 4px 8px 0 rgba(245, 242, 242, 0.2), 0 6px 20px 0 rgba(248, 246, 246, 0.19);
+
+}
+.header .logo {
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+    font-family: var(--marvel-font);
+    
+}
+.header .logo span{
+    background-color: black;
+    padding: 0 1rem;
+}
+.header .logo p{
+    display:inline-block;
+    margin: 0 .3rem;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.navbar a{
+    margin: 0 0.5rem;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    
+}
+.navbar a:hover{
+    color:white;
+}
